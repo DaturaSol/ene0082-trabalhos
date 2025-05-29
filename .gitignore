@@ -1,5 +1,0 @@
-.venv/
-MNIST-instructions.ipynb
-data/MNIST/*
-.gitignore
-notebook.ipynb
