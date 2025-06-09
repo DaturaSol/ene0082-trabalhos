@@ -1,0 +1,19 @@
+[project]
+name = "convolutional_network"
+version = "0.1.0"
+description = "Trabalho 3 ENE0082 - Rede Convolucional e Transfer Learning"
+authors = [{ name = "Datura", email = "daturasoldev@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[[tool.poetry.source]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+priority = "explicit"
