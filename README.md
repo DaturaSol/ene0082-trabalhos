@@ -7,13 +7,18 @@
 ## Instruções
 
 Este trabalho pode ser executado localmente; no entanto, recomendo que o faça no Google Colab,
-utilizando a GPU que eles disponibilizam, com 16 GB de VRAM.  
+utilizando a GPU que eles disponibilizam, com 15 GB de VRAM.  
 O *tamanho do batch* (`batch_size`), o *pin memory* (`pin_memory`) e outros hiperparâmetros foram 
 otimizados para serem executados nos servidores do Google, dada a infraestrutura disponível.
 
 Considere reduzir o *tamanho do batch* (batch size) caso o execute localmente, 
 dependendo da quantidade de memória que possuir. 
 O *pin memory* também pode causar erros caso haja insuficiência de memória.
+
+Considerando as otimizações, para o modelo vgg16 cada epoche deve rodar em 5 minutos fazendo uso de 14Gb de vram.
+Isto reduzir bastante o tempo de uso da maquina. Considerando que o modelo esta bem otimizado, o processo
+deve durar entre 25 a 35 minutos em média. Devido ao uso agressivo da gpu é possivel que o servidor da google 
+entre em crash, contudo se isto ficar muito recorrente mude `pin_memory` para `False`.
 
 ## Estruturas Utilizadas no Trabalho
 
