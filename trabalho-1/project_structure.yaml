@@ -1,0 +1,8 @@
+Trabalho 1:
+  - solution.ipynb # Projeto
+  - pyproject.toml # Equivalente ao requirements.txt
+  - poetry.lock 
+  - data: # Arquivos que vamos usar 
+    - winequalityN.cvs
+  - out: # Outputs do projeto
+    - None
